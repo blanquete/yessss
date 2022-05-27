@@ -1,0 +1,47 @@
+﻿[
+  {
+    "id": 1,
+    "nom": "Isaac",
+    "feina": "Conductor d/'autobus"
+  },
+  {
+    "id": 2,
+    "nom": "Isaac2",
+    "feina": "Conductor d/'autobus"
+  },
+  {
+    "id": 3,
+    "nom": "Isaac3",
+    "feina": "Conductor d/'autobus"
+  },
+  {
+    "id": 4,
+    "nom": "Isaac4",
+    "feina": "Venda de billets"
+  },
+  {
+    "id": 5,
+    "nom": "Isaac5",
+    "feina": "Conductor d/'autobus"
+  },
+  {
+    "id": 6,
+    "nom": "Isaac6",
+    "feina": "Venta de billets"
+  },
+  {
+    "id": 7,
+    "nom": "Isaac7",
+    "feina": "Manteniment"
+  },
+  {
+    "id": 8,
+    "nom": "Isaac8",
+    "feina": "Manteniment"
+  },
+  {
+    "id": 9,
+    "nom": "Isaac9",
+    "feina": "Conductor d/'autobus"
+  }
+]
