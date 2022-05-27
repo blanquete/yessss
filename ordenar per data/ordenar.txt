@@ -1,0 +1,17 @@
+private static void llistat_antiguitat()
+        {
+            DateTime data = demanarDateTime("Entra data: ");//demano la data
+
+            IMongoCollection<BsonDocument> collecioPersones = ObtenirCollection("persona");//obtinc la col·leccio de persones
+
+            var sort = Builders<BsonDocument>.Sort.Descending("data_neixament");//creo una variable per ordenar
+
+            List<BsonDocument> persones = collecioPersones.Find(new BsonDocument()).Sort(sort).ToList();//Ordeno amb la variable
+
+	    persones = persones.FindAll(p => DateTime.Parse(p["antiguitat"].ToString()) < data);//li dic que m'agafi nomes els documents on l'antiguitat sigui mes petita que la data enrada
+
+            foreach(BsonDocument p in persones)
+            {
+                Console.WriteLine("{0} - {1}, {2}", DateTime.Parse(p["antiguitat"].ToString()).ToString("dd/MM/yyyy"), p["cognoms"], p["nom"]);
+            }
+        }
